@@ -39,3 +39,19 @@ Como o projeto pode ter problemas de segurança, fiz uma varredura de segurança
 ```
 $ npm audit fix
 ```
+
+## Comandos usados durante o desenvolvimento
+
+Ativação do SQLite
+
+```
+$ dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+$ dotnet add package Microsoft.EntityFrameworkCore.Design
+```
+
+Criação do banco de dados e *Migration* inicial:
+
+```
+$ dotnet ef migrations add InitialCreate
+$ dotnet ef database update
+```

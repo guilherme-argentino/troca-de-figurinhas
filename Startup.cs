@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+using troca_de_figurinhas.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace troca_de_figurinhas
 {
     public class Startup
@@ -23,6 +26,10 @@ namespace troca_de_figurinhas
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            var connection = "Data Source=figurinhas.db";
+            services.AddDbContext<ContextoFigurinhas>
+                (options => options.UseSqlite(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
