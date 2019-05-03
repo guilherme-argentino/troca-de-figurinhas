@@ -1,1 +1,2 @@
 language: csharp
+solution: troca-de-figurinhas.csproj
