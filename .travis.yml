@@ -1,2 +1,6 @@
 language: csharp
 solution: troca-de-figurinhas.csproj
+mono: none
+dotnet: 2.1.502
+script:
+ - dotnet restore
