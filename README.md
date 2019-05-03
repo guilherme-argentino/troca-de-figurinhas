@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/guilherme-argentino/troca-de-figurinhas.svg?branch=master)](https://travis-ci.org/guilherme-argentino/troca-de-figurinhas)
+
 # Troca de figurinhas
 
 ## Começando
